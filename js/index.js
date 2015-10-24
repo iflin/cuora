@@ -69,11 +69,6 @@ $(document).ready(function ()
 					"useMarkerColorForValues": true,
 					"width": 7
 			},
-			"titles": [{
-					"id": "Title-1",
-					"size": 20,
-					"text": "歷年臺灣保育類淡水龜查獲數量"
-			}],
 			"dataProvider": [{
 					"category": "2006",
 					"column-1": "508",

@@ -58,6 +58,7 @@ header {
     -o-background-size: cover;
     background-size: cover;
 }
+#p1,
 #p3,
 #p5 {
     background-color: #31c6c6;
@@ -66,7 +67,7 @@ header {
     padding-top: 10px;
     background-attachment: relative;
     background-position: center center;
-    min-height: 600px;
+    min-height: 400px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -76,6 +77,17 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#p1 h2,
+#p3 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#p3 h3 {
+    color: white;
 }
 
 #p2 h2 {
@@ -93,7 +105,12 @@ header {
 
 img {
     width: 80%;
+    margin: 0px auto;
     margin-top: 10px;
+}
+
+tspan {
+  font-size: 14px;
 }
 
 /* 不同尺寸裝置，媒體查詢 Media Queries 的切換樣式 */
@@ -118,6 +135,7 @@ img {
         margin-top: 0px;
     }
     img {
+        margin: 0px auto;
         width: 60%;
     }
 }
