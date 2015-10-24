@@ -40,9 +40,7 @@ header {
     font-size: 66px;
 }
 
-#p2,
-#p4,
-#p6 {
+#p2 {
     margin-top: 0px;
     padding-top: 10px;
     background-attachment: relative;
@@ -58,6 +56,25 @@ header {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#p4,
+#p6 {
+    margin-top: 0px;
+    padding-top: 10px;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 400px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #p1,
 #p3,
 #p5 {
@@ -115,6 +132,14 @@ img {
 
 tspan {
   font-size: 14px;
+}
+
+#footer {
+  height: 50px;
+}
+
+.fb-share-button {
+  line-height: 20px;
 }
 
 /* 不同尺寸裝置，媒體查詢 Media Queries 的切換樣式 */
