@@ -8,14 +8,19 @@ import path        from 'path';
 
 let app = express();
 
+gulp.task('html', () => {
+  return gulp.src('./*.html')
+    .pipe(livereload());
+});
+
 gulp.task('css', () => {
   return gulp.src('./css/*.css')
-    .pipe(livereload())
+    .pipe(livereload());
 });
 
 gulp.task('js', () => {
   return gulp.src('./js/*.js')
-    .pipe(livereload())
+    .pipe(livereload());
 });
 
 gulp.task('server', (done) => {
@@ -31,6 +36,7 @@ gulp.task('watch', (done) => {
   livereload.listen({start: true});
   gulp.watch('./css/*.css', ['css']);
   gulp.watch('./js/*.js', ['js']);
+  gulp.watch('*.html', ['html']);
   done();
 });
 
