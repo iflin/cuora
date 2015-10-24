@@ -67,7 +67,7 @@ header {
     padding-top: 10px;
     background-attachment: relative;
     background-position: center center;
-    min-height: 400px;
+    min-height: 430px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -80,17 +80,21 @@ header {
 }
 
 #p1 h2,
-#p3 h2 {
+#p3 h2,
+#p5 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: white;
 }
 
-#p3 h3 {
+#p3 h3,
+#p5 h3 {
     color: white;
 }
 
-#p2 h2 {
+#p2 h2,
+#p4 h2,
+#p6 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
