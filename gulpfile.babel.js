@@ -29,7 +29,7 @@ gulp.task('server', (done) => {
 
 gulp.task('watch', (done) => {
   livereload.listen({start: true});
-  gulp.watch('./css/*.css', ['jade']);
+  gulp.watch('./css/*.css', ['css']);
   gulp.watch('./js/*.js', ['js']);
   done();
 });
