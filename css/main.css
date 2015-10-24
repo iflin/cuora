@@ -79,7 +79,7 @@ header {
     padding-bottom: 100px;
 }
 
-#p2 h2 { 
+#p2 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -95,7 +95,7 @@ header {
 img {
     width: 80%;
     margin-top: 10px;
-}       
+}
 
 /* 不同尺寸裝置，媒體查詢 Media Queries 的切換樣式 */
 
@@ -103,7 +103,7 @@ img {
 /* 中尺寸樣式：769~960 px (暫定) */
 
 @media only screen and (min-width: 769px) {
-    
+
     #counter {
         font-size: 120px;
     }

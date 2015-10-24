@@ -1,0 +1,39 @@
+{
+  "name": "cuora",
+  "description": "救救食蛇龜",
+  "version": "0.0.1",
+  "contributor": [
+    {
+      "name": "if",
+      "email": "if.lin87048@gmail.com"
+    },
+    {
+      "name": "Lee",
+      "email": "jessy1092@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "gulp dev"
+  },
+  "engines": {
+    "node": "1.x"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.21",
+    "browserify": "^11.0.1",
+    "connect-livereload": "^0.5.0",
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-livereload": "^3.7.0"
+  },
+  "repository": [
+    {
+      "type": "git",
+      "url": "https://github.com/wowafrica/wowafrica"
+    }
+  ],
+  "license": "MIT"
+}
