@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!--amCharts javascript-->
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/black.js"></script>
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv", {
+            "type": "serial",
+            "categoryField": "category",
+            "maxSelectedSeries": 8,
+            "rotate": true,
+            "angle": 30,
+            "depth3D": 30,
+            "startDuration": 1,
+            "startEffect": "easeInSine",
+            "backgroundColor": "#5e6464",
+            "theme": "black",
+            "categoryAxis": {
+                "gridPosition": "start",
+                "gridColor": "#000000",
+                "gridThickness": 0
+            },
+            "trendLines": [],
+            "graphs": [{
+                "balloonColor": "",
+                "balloonText": "[[category]]年查獲[[title]][[value]]隻",
+                "fillAlphas": 1,
+                "id": "AmGraph-1",
+                "lineColor": "#D5AC55",
+                "lineThickness": 3,
+                "title": "食蛇龜",
+                "type": "column",
+                "valueField": "column-1"
+            }, {
+                "balloonText": "[[category]]年查獲[[title]][[value]]隻",
+                "fillAlphas": 1,
+                "fontSize": -4,
+                "id": "AmGraph-2",
+                "lineColor": "#6C270E",
+                "title": "柴棺龜",
+                "type": "column",
+                "valueField": "column-2"
+            }],
+            "guides": [],
+            "valueAxes": [{
+                "id": "ValueAxis-1",
+                "position": "top",
+                "title": "隻數"
+            }],
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+                "markerBorderAlpha": 0,
+                "markerSize": 13,
+                "useGraphSettings": true,
+                "useMarkerColorForValues": true,
+                "width": 7
+            },
+            "titles": [{
+                "id": "Title-1",
+                "size": 20,
+                "text": "歷年臺灣保育類淡水龜查獲數量"
+            }],
+            "dataProvider": [{
+                "category": "2006",
+                "column-1": "508",
+                "column-2": "1009"
+            }, {
+                "category": "2007",
+                "column-1": "10",
+                "column-2": "0"
+            }, {
+                "category": "2008",
+                "column-1": "323",
+                "column-2": "0"
+            }, {
+                "category": "2009",
+                "column-1": "1483",
+                "column-2": "0"
+            }, {
+                "category": "2010",
+                "column-1": "530",
+                "column-2": "0"
+            }, {
+                "category": "2011",
+                "column-1": "20",
+                "column-2": "19"
+            }, {
+                "category": "2012",
+                "column-1": "663",
+                "column-2": "277"
+            }, {
+                "category": "2013",
+                "column-1": "3472",
+                "column-2": "3941"
+            }, {
+                "category": "2014",
+                "column-1": "44",
+                "column-2": "0"
+            }, {
+                "category": "2015",
+                "column-1": "2286",
+                "column-2": "920"
+            }]
+        });
+
+    </script>
+
+    <title>臺灣淡水龜生存危機</title>
+
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 8]>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+    <!--[if lte IE 7.0]>
+<script src=js/imgSizer.js></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <h1>臺灣已查獲<br>
+        <!--計數器效果-->
+        <span id="counter">0</span><br>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+        隻保育類淡水龜<br>
+            <h2>(2006年至今)</h2>
+        </h1>
+    </header>
+
+    <!--歷年淡水龜查獲數量-->
+    <div id=p1>
+        <div id="chartdiv" style="width: 100%; height: 400px; background-color: #31c6c6;"></div>
+
+    </div>
+
+    <!--查獲種類比例-->
+    <div id=p2>
+        <h2>被查獲種類數量比例</h2>
+        <div id=cf>
+            <h3>食蛇龜<br>60.2%</h3>
+            <img src="img/cfcricle.png">
+        </div>
+        <div id=mm>
+            <h3>柴棺龜<br>39.8%</h3>
+            <img src="img/mmcircle.png">
+        </div>
+    </div>
+
+    <!--為何盜獵走私-->
+    <div id=p3>
+        <h2>為何淡水龜會被盜獵走私</h2>
+        <h3>供應中國市場</h3>
+        <p>中國現在已經成長為世界第二大經濟體，同時也是亞洲最大的野生動物輸入國。</p>
+        <h3>炒作獲利</h3>
+        <h3>人性貪婪</h3>
+    </div>
+
+    <!---盜獵走私手法-->
+    <div id=p4>
+        <h2>台灣盜獵與走私手法</h2>
+        <h3>鼠籠捕捉</h3>
+        <h3>專職盜獵集團</h3>
+        <h3>一般民眾</h3>
+    </div>
+
+    <!--保育困境-->
+    <div id=p5>
+        <h2>保育困境</h2>
+        <h3>收容爆滿</h3>
+        <h3>執法不易</h3>
+        <h3>刑罰過輕</h3>
+    </div>
+
+    <!--更多資訊-->
+    <div id=p6>
+        <h2>更多資訊</h2>
+        <h3>相關影片</h3>
+        <h3>臉書專頁</h3>
+        <h3>相關文章</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>分享這件事情吧！</h2>
+        <ul class="icons">
+
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
