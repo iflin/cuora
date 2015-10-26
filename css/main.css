@@ -37,6 +37,8 @@ header {
 }
 
 #counter {
+    display: block;
+    padding: 35px 0;
     font-size: 66px;
 }
 
