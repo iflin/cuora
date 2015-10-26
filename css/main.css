@@ -42,6 +42,12 @@ header {
     font-size: 66px;
 }
 
+#chartdiv {
+    width: 100%;
+    height: 400px;
+    background-color: #31c6c6;
+}
+
 #p2 {
     margin-top: 0px;
     padding-top: 10px;
